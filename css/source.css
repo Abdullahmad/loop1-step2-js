@@ -21,21 +21,66 @@ body {
 .index {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .index input {
-    width: 80%;
+    width: 78%;
     height: 3rem;
     border: none;
     border-bottom: 4px solid rgb(196, 194, 194);
     outline: none;
+    font-size: 1rem;
 }
 
 .index button {
     width: 20%;
     height: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.index button:hover {
+    background-color: rgb(225, 234, 235);
 }
 
 .index input::placeholder {
     font-size: 1.5rem;
+}
+
+.index input:hover {
+    border-bottom: 4px solid gray;
+}
+
+.charge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20rem;
+    font-size: larger;
+    font-weight: 700;
+    margin-top: 3rem;
+}
+
+.tab {
+    margin-top: 2rem;
+    font-size: x-large;
+}
+
+.positive {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.neutral {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.charge p {
+    cursor: pointer;
+}
+
+.tab {
+    cursor: context-menu;
 }

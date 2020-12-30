@@ -1,0 +1,1 @@
+const jargon = document.querySelector('#imput');

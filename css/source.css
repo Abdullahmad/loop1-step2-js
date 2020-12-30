@@ -75,12 +75,18 @@ body {
 
 .neutral {
     color: rgba(0, 0, 0, 0.2);
+    color: black;
 }
 
 .charge p {
     cursor: pointer;
+    color: rgba(0, 0, 0, 0.2);
 }
 
 .tab {
     cursor: context-menu;
+}
+
+.active {
+    color: black;
 }

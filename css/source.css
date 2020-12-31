@@ -75,10 +75,9 @@ body {
 
 .neutral {
     color: rgba(0, 0, 0, 0.2);
-    color: black;
 }
 
-.charge p {
+.tablinks {
     cursor: pointer;
     color: rgba(0, 0, 0, 0.2);
 }

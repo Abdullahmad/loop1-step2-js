@@ -1,19 +1,29 @@
+const options = [
+    'Positive',
+    'Negative',
+    'Neutral'
+]
+
 const positiveTab = document.querySelector('#positive');
 const negativeTabs = document.querySelector('#negative');
 const neutralTab = document.querySelector('#neutral');
 const tabLinks = document.querySelectorAll('.tablinks');
-const charges = document.querySelector('charge')
-negativeTabs.addEventListener('click', () => {
-    // removeActive();
-    negativeTabs.classList.add('active')
+const charges = document.querySelector('charge');
+const contents = document.querySelector('.content')
+
+tabLinks.addEventListener('click', () => {
+    contents.push(...options)
 })
 
-// const removeActive = () => {
-//     charges.forEach(element => {
-//         element.classList.remove('active')
-//     })
-// }
+tabLinks.forEach(tabLink => {
+    tabLink.addEventListener('click', () => {
+        removeActive();
+        tabLink.classList.add('active');
+    })
+})
 
-function render() {
-
+const removeActive = () => {
+    tabLinks.forEach(tabLink => {
+        tabLink.classList.remove('active');
+    })
 }

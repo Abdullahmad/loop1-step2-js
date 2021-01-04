@@ -1,7 +1,7 @@
 const options = [
-    'positive',
-    'negative',
-    'neutral'
+    'Positive',
+    'Negative',
+    'Neutral'
 ]
 
 let active = 'positive'
@@ -23,11 +23,12 @@ const render = () => {
 
 
 charges.addEventListener('click', (e) => {
-    const selected = e.target.dataset.key
-    console.log(selected)
-    if (!selected) return
-    active = selected
-    render()
+    const selected = e.target.dataset.key;
+    console.log(selected);
+    if (!selected)
+        return;
+    active = selected;
+    render();
 
 
 })
